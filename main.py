@@ -169,7 +169,7 @@ def bmi_calculator():
             
             import matplotlib.pyplot as plt
             fig, ax = plt.subplots()
-            categories = ['Underweight', 'Normal weight', 'Overweight', 'Obesity']
+            categories = ['Kurus', 'Normal', 'Gemuk', 'Obesitas']
             colors = ['blue', 'green', 'orange', 'red']
             ax.barh(categories, [18.5, 24.9, 29.9, 35], color=colors, alpha=0.6)
             ax.axvline(bmi, color='black', linestyle='--')
