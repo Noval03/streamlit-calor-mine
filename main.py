@@ -17,7 +17,7 @@ import tensorflow_hub as hub
 
 
 # Fungsi untuk memuat model dari TensorFlow Hub
-@st.cache_resource(allow_output_mutation=True)
+
 def load_model():
     model = hub.load("https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/5")
     return model
