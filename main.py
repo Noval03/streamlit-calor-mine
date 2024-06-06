@@ -233,7 +233,7 @@ def resep():
     st.title("Resep")
     # Contoh data resep
     resep_data = [
-        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://ibb.co.com/99Xcm2k", "caption": """Bahan Mentah
+        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://i.ibb.co.com/d09js6w/SALAD.jpg", "caption": """Bahan Mentah
 • 2 Avocados, large
 • 3 packed cups Baby spinach
 • 3 Limes, medium
