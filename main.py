@@ -233,7 +233,7 @@ def resep():
     st.title("Resep")
     # Contoh data resep
     resep_data = [
-        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://i.ibb.co.com/d09js6w/SALAD.jpg", "caption": "Bahan Mentah
+        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://i.ibb.co.com/d09js6w/SALAD.jpg", "caption": """Bahan Mentah
 • 2 Avocados, large
 • 3 packed cups Baby spinach
 • 3 Limes, medium
@@ -245,7 +245,7 @@ def resep():
 Bahan Cair
 • 1 cup Water 
 Cara pembuatan : campurkan semua
-"}, {"nama": "2.	SALAD BUAH SEGAR", "foto": "https://i.ibb.co.com/1qhctjm/SALAD-BUAH.jpg", "caption": "Bahan-bahan
+"""}, {"nama": "2.	SALAD BUAH SEGAR", "foto": "https://i.ibb.co.com/1qhctjm/SALAD-BUAH.jpg", "caption": "Bahan-bahan
  30 menit
  5 porsi
 1 kg buah semangka
