@@ -233,7 +233,19 @@ def resep():
     st.title("Resep")
     # Contoh data resep
     resep_data = [
-        {"nama": "Nasi Goreng", "foto": "https://cdn1-production-images-kly.akamaized.net/LDRjBxjUH3gyrzEAUFrCi_XisTs=/0x148:1920x1230/800x450/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3093328/original/069244600_1585909700-fried-2509089_1920.jpg", "caption": "Bahan-bahan: Nasi, Telur, Royco, dan Bumbu Racik Nasi Goreng"},
+        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://ibb.co.com/99Xcm2k", "caption": """Bahan Mentah
+• 2 Avocados, large
+• 3 packed cups Baby spinach
+• 3 Limes, medium
+• 2 Mangos, large
+• 1/2 cup Quinoa
+• 1/4 tsp Black pepper, freshly ground
+• 1/4 cup Olive oil
+• 1/4 cup Almonds
+Bahan Cair
+• 1 cup Water 
+Cara pembuatan : campurkan semua
+"""},
     
 ]
     
