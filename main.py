@@ -283,7 +283,7 @@ Cara Pembuatan :
     
     for resep in resep_data:
         st.header(resep["nama"])
-        st.image(resep["foto"], write=resep["caption"], use_column_width=True)
+        st.image(resep["foto"], caption=resep["caption"], use_column_width=True)
 
 def main():
     st.cache()
