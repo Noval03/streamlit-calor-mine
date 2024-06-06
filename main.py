@@ -261,7 +261,7 @@ Cara Membuat
 1.	Cuci dan potong-potong semua buah kecuali murbey
 2.	Campurkan mayonais, gula, skm, cimory jika kurang manis bisa di tambah gula
 3.	Campur buah dengan mayonais secukupnya..siap dihidangkan
-"""}, {"nama": "3.	BROKOLI SAUS TIRAM  ", "foto": "https://i.ibb.co.com/bH4jQxT/Korean-Roled.jpg", "caption": """Bahan-bahan
+"}, {"nama": "3.	BROKOLI SAUS TIRAM  ", "foto": "https://i.ibb.co.com/bH4jQxT/Korean-Roled.jpg", "caption": "Bahan-bahan
 1 bonggol Brokoly
 1/2 bh bwg bombay
 4 siung bwg putih
