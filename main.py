@@ -256,9 +256,9 @@ Cara pembuatan : campurkan semua
 def main():
     st.cache()
     
-    # # Tentukan halaman yang akan ditampilkan berdasarkan tombol yang ditekan
-    # if "page" not in st.session_state:
-    #     st.session_state["page"] = "login"
+    # Tentukan halaman yang akan ditampilkan berdasarkan tombol yang ditekan
+    if "page" not in st.session_state:
+        st.session_state["page"] = "login"
         
         
     if st.session_state["authentication_status"]:
