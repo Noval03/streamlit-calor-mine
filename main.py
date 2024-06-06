@@ -233,7 +233,7 @@ def resep():
     st.title("Resep")
     # Contoh data resep
     resep_data = [
-        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://i.ibb.co.com/d09js6w/SALAD.jpg", "caption": """Bahan Mentah
+        {"nama": "1.	QUINOA SALAD TROPIS", "foto": "https://i.ibb.co.com/d09js6w/SALAD.jpg", "caption": "Bahan Mentah
 • 2 Avocados, large
 • 3 packed cups Baby spinach
 • 3 Limes, medium
@@ -245,7 +245,7 @@ def resep():
 Bahan Cair
 • 1 cup Water 
 Cara pembuatan : campurkan semua
-"""}, {"nama": "2.	SALAD BUAH SEGAR", "foto": "https://i.ibb.co.com/1qhctjm/SALAD-BUAH.jpg", "caption": """Bahan-bahan
+"}, {"nama": "2.	SALAD BUAH SEGAR", "foto": "https://i.ibb.co.com/1qhctjm/SALAD-BUAH.jpg", "caption": "Bahan-bahan
  30 menit
  5 porsi
 1 kg buah semangka
@@ -279,7 +279,7 @@ Cara Pembuatan :
 2.	Potong brokoly & batangnya. Rendam dg 1 sdm garam 5mnt.
 3.	Cincang bwg putih & iris tipis bwg bombay. Cincangan bwg putih di bilas dulu dg air mengalir menggunakan saringan dan peras & tiriskan. Siapkan sausnya dg mencampur semua bumbu saus dlm 1 wadah. Siapkan campuran 1 sdm maizena & air di wadah tersendiri. Tumis bwg putih cincang dg minyak. Angkat tiriskan.
 4.	Masukan larutan saos da aduk hga mendidih. (Bisa tes rasa) Jika dirasa sudah pas masukan larutan maizena.terakhir Sajikan telur kukus siram brokoly saus Tiram & taburan bwg goreng.
-"""},]
+"}]
     
     for resep in resep_data:
         st.header(resep["nama"])
