@@ -239,7 +239,7 @@ def main():
     if "page" not in st.session_state:
         st.session_state["page"] = "login"
         
-    authentication_status = authenticator.login("Login", "main")
+   
     
     if authentication_status:
         st.session_state["authentication_status"] = True
