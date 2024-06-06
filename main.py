@@ -245,13 +245,49 @@ def resep():
 Bahan Cair
 • 1 cup Water 
 Cara pembuatan : campurkan semua
+"""},  resep_data = [
+        {"nama": "2.	SALAD BUAH SEGAR", "foto": "https://i.ibb.co.com/1qhctjm/SALAD-BUAH.jpg", "caption": """Bahan-bahan
+ 30 menit
+ 5 porsi
+1 kg buah semangka
+1/2 kg melon
+2 apel
+2 pir
+1 genggam murbey
+1/2 kg mayonais
+2 saschet skm putih
+3 sdm gula pasir
+1 botol kecil cimory blubbery
+Cara Membuat
+1.	Cuci dan potong-potong semua buah kecuali murbey
+2.	Campurkan mayonais, gula, skm, cimory jika kurang manis bisa di tambah gula
+3.	Campur buah dengan mayonais secukupnya..siap dihidangkan
+"""},  resep_data = [
+        {"nama": "3.	BROKOLI SAUS TIRAM  ", "foto": "https://i.ibb.co.com/bH4jQxT/Korean-Roled.jpg", "caption": """Bahan-bahan
+1 bonggol Brokoly
+1/2 bh bwg bombay
+4 siung bwg putih
+2 bh telor
+Daun pisang / plastic wrap lebih bagus double
+Bumbu saus :
+2 sdm saos tiram
+2 sdm kecap asin
+1 sdt kaldu jamur
+1 Sdm gula pasir
+1 sdt kecap manis
+50 ml air
+Cara Pembuatan : 
+1.	Kocok telor + 1 sdt garam + air 100 ml, saring dan masukan ke mangkuk tahan panas dg menutupnya daun pisang/plastic wrap, kukus hga 30mnt.
+2.	Potong brokoly & batangnya. Rendam dg 1 sdm garam 5mnt.
+3.	Cincang bwg putih & iris tipis bwg bombay. Cincangan bwg putih di bilas dulu dg air mengalir menggunakan saringan dan peras & tiriskan. Siapkan sausnya dg mencampur semua bumbu saus dlm 1 wadah. Siapkan campuran 1 sdm maizena & air di wadah tersendiri. Tumis bwg putih cincang dg minyak. Angkat tiriskan.
+4.	Masukan larutan saos da aduk hga mendidih. (Bisa tes rasa) Jika dirasa sudah pas masukan larutan maizena.terakhir Sajikan telur kukus siram brokoly saus Tiram & taburan bwg goreng.
 """},
     
 ]
     
     for resep in resep_data:
         st.header(resep["nama"])
-        st.image(resep["foto"], caption=resep["caption"], use_column_width=True)
+        st.image(resep["foto"], write=resep["caption"], use_column_width=True)
 
 def main():
     st.cache()
