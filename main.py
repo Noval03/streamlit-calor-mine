@@ -17,7 +17,7 @@ import tensorflow_hub as hub
 
 
 # Fungsi untuk memuat model dari TensorFlow Hub
-
+@st.cache(allow_output_mutation=True)
 def load_model():
     model = hub.load("https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/5")
     return model
@@ -60,22 +60,29 @@ def deteksi_makanan():
     uploaded_file = st.file_uploader("Pilih gambar...", type=["jpg", "jpeg", "png"])
     
     if uploaded_file is not None:
-        try:
-            image = Image.open(uploaded_file)
-            # Membuat layout dengan dua kolom
-            col1, col2 = st.columns(2)
+        # image = Image.open(uploaded_file)
+        # st.image(image, caption='Gambar yang diunggah', use_column_width=True)
+        # st.write("")
+        # st.write("Sedang mengklasifikasikan...")
+        
+        # # Prediksi label gambar
+        # label = predict(image, model, labels)
+        # st.write(f"Prediksi: {label}")
+        # Membuat layout dengan dua kolom
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.write("Sedang mengklasifikasikan...")
             
-            with col1:
-                st.write("Sedang mengklasifikasikan...")
-                # Prediksi label gambar
-                label = predict(image, model, labels)
-                st.write("Prediksi:")
-                st.title(f"{label}")
-                
-            with col2:
-                st.image(image, caption='Gambar yang diunggah', use_column_width=True)
-        except Exception as e:
-            st.error(f"Error processing image: {e}")
+            # Prediksi label gambar
+            image = Image.open(uploaded_file)
+            label = predict(image, model, labels)
+            st.write("Prediksi:")
+            st.title(f"{label}")
+            
+        with col2:
+            st.image(image, caption='Gambar yang diunggah', use_column_width=True)
+
 
 # Memuat konfigurasi di luar fungsi main
 with open('config.yaml') as file:
@@ -235,14 +242,14 @@ def resep():
         st.image(resep["foto"], caption=resep["caption"], use_column_width=True)
 
 def main():
+    st.cache()
+    
     # Tentukan halaman yang akan ditampilkan berdasarkan tombol yang ditekan
     if "page" not in st.session_state:
         st.session_state["page"] = "login"
         
-   
-    
-    if authentication_status:
-        st.session_state["authentication_status"] = True
+        
+    if st.session_state["authentication_status"]:
         authenticator.logout("Logout", "main")
         st.title('Calor Mine')
         st.write(f'Hallo *{st.session_state["name"]}*')
@@ -275,9 +282,10 @@ def main():
         elif st.session_state["page"] == "forgot_username":
             forgot_username()
         else:
-            if authentication_status == False:
+            # Halaman Login
+            if st.session_state["authentication_status"] is False:
                 st.error('Username/password is incorrect')
-            elif authentication_status == None:
+            elif st.session_state["authentication_status"] is None:
                 st.warning('Please enter your username and password')
             
             # Form login
