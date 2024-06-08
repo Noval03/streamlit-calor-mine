@@ -15,13 +15,10 @@ from googleapiclient.discovery import build
 import tensorflow as tf
 import tensorflow_hub as hub
 
-
-
 @st.cache(allow_output_mutation=True)
 def load_model():
     model = hub.load("https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/classification/5")
     return model
-
 
 @st.cache_data
 def load_labels():
