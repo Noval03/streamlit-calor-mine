@@ -14,13 +14,13 @@ pip install -r requirements.txt
 2. Menjalankan Aplikasi:
 streamlit run app.py
 3. Login dan Registrasi:
-Login: Masukkan username dan password untuk mengakses fitur aplikasi.
-Registrasi: Buat akun baru jika belum terdaftar.
-Lupa Password/Username: Reset password atau cari username jika lupa.
-4. Deteksi Makanan: Unggah gambar makanan untuk mendapatkan prediksi jenis makanan.
-5. Menghitung BMI: Masukkan tinggi dan berat badan Anda untuk menghitung BMI.
-6. Mencari Video: Gunakan fitur pencarian untuk menemukan video tutorial kesehatan.
-7. Mengakses Resep: Jelajahi resep makanan sehat yang tersedia.
-8. Pengaturan Akun:
-Ubah Nama Pengguna: Ganti nama pengguna sesuai keinginan.
-Ubah Kata Sandi: Ganti kata sandi untuk keamanan akun.
+   Login: Masukkan username dan password untuk mengakses fitur aplikasi.
+   Registrasi: Buat akun baru jika belum terdaftar.
+   Lupa Password/Username: Reset password atau cari username jika lupa.
+5. Deteksi Makanan: Unggah gambar makanan untuk mendapatkan prediksi jenis makanan.
+6. Menghitung BMI: Masukkan tinggi dan berat badan Anda untuk menghitung BMI.
+7. Mencari Video: Gunakan fitur pencarian untuk menemukan video tutorial kesehatan.
+8. Mengakses Resep: Jelajahi resep makanan sehat yang tersedia.
+9. Pengaturan Akun:
+   Ubah Nama Pengguna: Ganti nama pengguna sesuai keinginan.
+   Ubah Kata Sandi: Ganti kata sandi untuk keamanan akun.
